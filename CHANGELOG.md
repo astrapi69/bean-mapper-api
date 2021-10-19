@@ -2,6 +2,13 @@
 ----------------------
 
 
+Version 1.1-SNAPSHOT
+-------------
+
+CHANGED:
+
+- changed dependencies to the new group id io.github.astrapi69
+
 Version 1-SNAPSHOT
 -------------
 
