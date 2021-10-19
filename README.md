@@ -49,7 +49,7 @@ Than you can add the dependency to your dependencies:
 	<properties>
 			...
 		<!-- bean-mapper-api version -->
-		<bean-mapper-api.version>1</bean-mapper-api.version>
+		<bean-mapper-api.version>1.1</bean-mapper-api.version>
 			...
 	</properties>
 			...
@@ -71,7 +71,7 @@ your project `build.gradle` if you want to import the core functionality of bean
 
 define version in file gradle.properties
 ```
-beanMapperApiVersion=1
+beanMapperApiVersion=1.1
 ```
 
 or in build.gradle ext area
@@ -79,7 +79,7 @@ or in build.gradle ext area
 ```
 ext {
 			...
-    beanMapperApiVersion = "1"
+    beanMapperApiVersion = "1.1"
 			...
 }
 ```
