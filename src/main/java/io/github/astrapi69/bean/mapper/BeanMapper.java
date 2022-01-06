@@ -58,13 +58,31 @@ public interface BeanMapper<ENTITY, DTO>
 	List<DTO> toDtos(final Collection<ENTITY> entities);
 
 	/**
+	 * Maps the given iterable of entity objects to a list of data transfer objects
+	 *
+	 * @param entities
+	 *            the iterable of entities objects
+	 * @return the list of data transfer objects
+	 */
+	List<DTO> toDtos(final Iterable<ENTITY> entities);
+
+	/**
 	 * Maps the given list of data transfer objects to a list of entity objects
 	 *
 	 * @param dtos
-	 *            the list of data transfer objects
+	 *            the collection of data transfer objects
 	 * @return the list of entity objects.
 	 */
 	List<ENTITY> toEntities(final Collection<DTO> dtos);
+
+	/**
+	 * Maps the given iterable of data transfer objects to a list of entity objects
+	 *
+	 * @param dtos
+	 *            the iterable of data transfer objects
+	 * @return the list of entity objects.
+	 */
+	List<ENTITY> toEntities(final Iterable<DTO> dtos);
 
 	/**
 	 * Maps the given data transfer object to a entity object.

@@ -1,4 +1,3 @@
-# bean-mapper-api
 # Overview
 
 <div style="text-align: center">
@@ -36,6 +35,28 @@ No animals were harmed in the making of this library.
 
 The source code comes under the liberal MIT License, making bean-mapper-api great for all types of applications.
 
+## gradle dependency
+
+You can first define the version in the ext section and add than the following gradle dependency to
+your project `build.gradle` if you want to import the core functionality of bean-mapper-api:
+
+define version in file gradle.properties
+```
+beanMapperApiVersion=1.2
+```
+
+or in build.gradle ext area
+
+```
+    beanMapperApiVersion = "1.2"
+```
+
+then add the dependency to the dependencies area
+
+```
+    implementation("io.github.astrapi69:bean-mapper-api:$beanMapperApiVersion")
+```
+
 ## Maven dependency
 
 Maven dependency is now on sonatype.
@@ -49,7 +70,7 @@ Than you can add the dependency to your dependencies:
 	<properties>
 			...
 		<!-- bean-mapper-api version -->
-		<bean-mapper-api.version>1.1</bean-mapper-api.version>
+		<bean-mapper-api.version>1.2</bean-mapper-api.version>
 			...
 	</properties>
 			...
@@ -63,36 +84,6 @@ Than you can add the dependency to your dependencies:
 			</dependency>
 			...
 		</dependencies>
-
-## gradle dependency
-
-You can first define the version in the ext section and add than the following gradle dependency to
-your project `build.gradle` if you want to import the core functionality of bean-mapper-api:
-
-define version in file gradle.properties
-```
-beanMapperApiVersion=1.1
-```
-
-or in build.gradle ext area
-
-```
-ext {
-			...
-    beanMapperApiVersion = "1.1"
-			...
-}
-```
-
-then add the dependency to the dependencies area
-
-```
-dependencies {
-			...
-    implementation("io.github.astrapi69:bean-mapper-api:$beanMapperApiVersion")
-			...
-}
-```
 
 # Donations
 
@@ -172,8 +163,6 @@ Don't forget to add new units tests on your changes.
 
 Do not hesitate to contact the bean-mapper-api developers with your questions, concerns, comments, bug reports, or feature requests.
 - Feature requests, questions and bug reports can be reported at the [issues page](https://github.com/astrapi69/bean-mapper-api/issues).
-
-## Similar projects
 
 ## Credits
 

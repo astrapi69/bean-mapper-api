@@ -2,9 +2,12 @@
 ----------------------
 
 
-Version 1.2-SNAPSHOT
+Version 1.2
 -------------
 
+ADDED:
+  
+- added new map methods for iterable objects
 
 Version 1.1
 -------------
