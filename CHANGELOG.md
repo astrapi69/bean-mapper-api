@@ -2,7 +2,7 @@
 ----------------------
 
 
-Version 2-SNAPSHOT
+Version 2
 -------------
 
 ADDED:
