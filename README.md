@@ -67,23 +67,23 @@ functionality of bean-mapper-api:
 
 Than you can add the dependency to your dependencies:
 
-	<properties>
-			...
-		<!-- bean-mapper-api version -->
-		<bean-mapper-api.version>1.2</bean-mapper-api.version>
-			...
-	</properties>
-			...
-		<dependencies>
-			...
-			<!-- bean-mapper-api DEPENDENCY -->
-			<dependency>
-				<groupId>io.github.astrapi69</groupId>
-				<artifactId>bean-mapper-api</artifactId>
-				<version>${bean-mapper-api.version}</version>
-			</dependency>
-			...
-		</dependencies>
+    <properties>
+            ...
+        <!-- bean-mapper-api version -->
+        <bean-mapper-api.version>1.2</bean-mapper-api.version>
+            ...
+    </properties>
+            ...
+        <dependencies>
+            ...
+            <!-- bean-mapper-api DEPENDENCY -->
+            <dependency>
+                <groupId>io.github.astrapi69</groupId>
+                <artifactId>bean-mapper-api</artifactId>
+                <version>${bean-mapper-api.version}</version>
+            </dependency>
+            ...
+        </dependencies>
 
 # Donations
 
@@ -165,5 +165,3 @@ Do not hesitate to contact the bean-mapper-api developers with your questions, c
 - Feature requests, questions and bug reports can be reported at the [issues page](https://github.com/astrapi69/bean-mapper-api/issues).
 
 ## Credits
-
-
