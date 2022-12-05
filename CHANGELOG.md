@@ -4,6 +4,15 @@
 Version 2.1-SNAPSHOT
 -------------
 
+ADDED:
+
+- new generic method that returns the mapper object for mapping
+
+CHANGED:
+
+- update gradle version to 7.6
+- update of gradle-plugin dependency spotless-plugin-gradle in version 6.12.0
+- update of gradle-plugin dependency gradle-versions-plugin in version 0.44.0
 
 Version 2
 -------------

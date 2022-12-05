@@ -34,9 +34,18 @@ import java.util.Collection;
  *            the element type of the entity object
  * @param <DTO>
  *            the generic type of the data transfer object
+ * @param <MAPPER>
+ *            the generic type of the mapper object
  */
-public interface GenericMapper<ENTITY, DTO> extends BeanMapper<ENTITY, DTO>
+public interface GenericMapper<ENTITY, DTO, MAPPER> extends BeanMapper<ENTITY, DTO>
 {
+
+	/**
+	 * Gets the mapper
+	 *
+	 * @return the mapper
+	 */
+	MAPPER getMapper();
 
 	/**
 	 * Constructs new instances of destinationClass and performs mapping between from source.
