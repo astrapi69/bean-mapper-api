@@ -4,7 +4,14 @@
 Version 2.2-SNAPSHOT
 -------------
 
+ADDED:
 
+- new generic method that returns the dto class for mapping
+- new generic method that returns the entity class for mapping
+
+CHANGED:
+
+- provided default method implementations for interface BeanMapper
 
 Version 2.1
 -------------

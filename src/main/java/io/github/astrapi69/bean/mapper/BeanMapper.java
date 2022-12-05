@@ -24,8 +24,10 @@
  */
 package io.github.astrapi69.bean.mapper;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * The Interface {@link BeanMapper} provides the methods for mapping entities to data transfer
@@ -55,7 +57,19 @@ public interface BeanMapper<ENTITY, DTO>
 	 *            the collection of entities objects
 	 * @return the list of data transfer objects
 	 */
-	List<DTO> toDtos(final Collection<ENTITY> entities);
+	default List<DTO> toDtos(final Collection<ENTITY> entities)
+	{
+		Objects.requireNonNull(entities);
+		final List<DTO> domainObjects = new ArrayList<>();
+		if (!entities.isEmpty())
+		{
+			for (final ENTITY entity : entities)
+			{
+				domainObjects.add(toDto(entity));
+			}
+		}
+		return domainObjects;
+	}
 
 	/**
 	 * Maps the given iterable of entity objects to a list of data transfer objects
@@ -64,7 +78,16 @@ public interface BeanMapper<ENTITY, DTO>
 	 *            the iterable of entities objects
 	 * @return the list of data transfer objects
 	 */
-	List<DTO> toDtos(final Iterable<ENTITY> entities);
+	default List<DTO> toDtos(final Iterable<ENTITY> entities)
+	{
+		Objects.requireNonNull(entities);
+		final List<DTO> domainObjects = new ArrayList<>();
+		for (final ENTITY entity : entities)
+		{
+			domainObjects.add(toDto(entity));
+		}
+		return domainObjects;
+	}
 
 	/**
 	 * Maps the given list of data transfer objects to a list of entity objects
@@ -73,7 +96,19 @@ public interface BeanMapper<ENTITY, DTO>
 	 *            the collection of data transfer objects
 	 * @return the list of entity objects.
 	 */
-	List<ENTITY> toEntities(final Collection<DTO> dtos);
+	default List<ENTITY> toEntities(final Collection<DTO> dtos)
+	{
+		Objects.requireNonNull(dtos);
+		final List<ENTITY> entities = new ArrayList<>();
+		if (!dtos.isEmpty())
+		{
+			for (final DTO dto : dtos)
+			{
+				entities.add(toEntity(dto));
+			}
+		}
+		return entities;
+	}
 
 	/**
 	 * Maps the given iterable of data transfer objects to a list of entity objects
@@ -82,7 +117,16 @@ public interface BeanMapper<ENTITY, DTO>
 	 *            the iterable of data transfer objects
 	 * @return the list of entity objects.
 	 */
-	List<ENTITY> toEntities(final Iterable<DTO> dtos);
+	default List<ENTITY> toEntities(final Iterable<DTO> dtos)
+	{
+		Objects.requireNonNull(dtos);
+		final List<ENTITY> entities = new ArrayList<>();
+		for (final DTO dto : dtos)
+		{
+			entities.add(toEntity(dto));
+		}
+		return entities;
+	}
 
 	/**
 	 * Maps the given data transfer object to a entity object.
