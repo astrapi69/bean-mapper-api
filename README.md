@@ -42,13 +42,13 @@ your project `build.gradle` if you want to import the core functionality of bean
 
 define version in file gradle.properties
 ```
-beanMapperApiVersion=2
+beanMapperApiVersion=2.1
 ```
 
 or in build.gradle ext area
 
 ```
-    beanMapperApiVersion = "2"
+    beanMapperApiVersion = "2.1"
 ```
 
 then add the dependency to the dependencies area
@@ -70,7 +70,7 @@ Than you can add the dependency to your dependencies:
     <properties>
             ...
         <!-- bean-mapper-api version -->
-        <bean-mapper-api.version>2</bean-mapper-api.version>
+        <bean-mapper-api.version>2.1</bean-mapper-api.version>
             ...
     </properties>
             ...
