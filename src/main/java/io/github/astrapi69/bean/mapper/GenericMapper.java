@@ -27,8 +27,8 @@ package io.github.astrapi69.bean.mapper;
 import java.util.Collection;
 
 /**
- * The Interface {@link GenericMapper} provides the methods for mapping entities to data transfer
- * objects and back.
+ * The interface {@link GenericMapper} extends {@link BeanMapper} provides methods for get the
+ * mapper, the class type of entity and the dto
  *
  * @param <ENTITY>
  *            the element type of the entity object

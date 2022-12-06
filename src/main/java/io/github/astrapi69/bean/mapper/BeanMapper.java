@@ -30,8 +30,8 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * The Interface {@link BeanMapper} provides the methods for mapping entities to data transfer
- * objects and back.
+ * The interface {@link BeanMapper} provides the methods for mapping entities to data transfer
+ * objects(dto) and back
  *
  * @param <ENTITY>
  *            the element type of the entity object
