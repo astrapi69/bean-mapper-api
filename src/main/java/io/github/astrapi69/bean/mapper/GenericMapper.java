@@ -48,6 +48,13 @@ public interface GenericMapper<ENTITY, DTO, MAPPER> extends BeanMapper<ENTITY, D
 	MAPPER getMapper();
 
 	/**
+	 * Factory method for creating the new mapper
+	 *
+	 * @return the new mapper
+	 */
+	MAPPER newMapper();
+
+	/**
 	 * Gets the data transfer object class.
 	 *
 	 * @return the data transfer object class
